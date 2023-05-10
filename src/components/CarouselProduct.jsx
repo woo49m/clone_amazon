@@ -1,6 +1,7 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper";
+import { Link } from "react-router-dom";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -18,10 +19,12 @@ function CarouselProduct() {
       >
         {Array.from({ length: 9 }, (_, i) => (
           <SwiperSlide className=" p-5">
-            <img
-              className="h-[150px] m-auto"
-              src={`../images/product_${i}_small.jpg`}
-            ></img>
+            <Link to={`./product/${i}`}>
+              <img
+                className="h-[150px] m-auto"
+                src={`../images/product_${i}_small.jpg`}
+              ></img>
+            </Link>
           </SwiperSlide>
         ))}
       </Swiper>

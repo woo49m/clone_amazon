@@ -44,7 +44,7 @@ function Carousel() {
           <img src=" ../images/carousel_5.jpg"></img>
         </SwiperSlide>
       </Swiper>
-      <div className="absolute h-[40%] w-[100%] bg-gradient-to-t from-black to-transparent bottom-[30%] z-20 "></div>
+      <div className="absolute h-[25%] w-[100%] bg-gradient-to-t from-black to-transparent bottom-[30%] z-20 "></div>
       <div className=" h-[30%] w-[100%] bg-gradient-to-b from-black  to-transparent bottom-[40%] "></div>
     </div>
   );
